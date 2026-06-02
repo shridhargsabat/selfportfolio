@@ -597,9 +597,66 @@ header.scrolled {
 /* --- About Me Section --- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 300px 1.2fr 1fr;
+  gap: 50px;
   align-items: center;
+}
+
+/* --- About Image --- */
+.about-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.about-image-card {
+  position: relative;
+  padding: 12px;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glass);
+}
+
+.about-image-glow {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-secondary) 0%, transparent 70%);
+  filter: blur(40px);
+  opacity: 0.35;
+  top: 10%;
+  left: 10%;
+  z-index: 0;
+  transition: all var(--transition-normal);
+}
+
+.about-image-card:hover .about-image-glow {
+  transform: scale(1.3) translate(15px, 15px);
+  opacity: 0.55;
+  background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+}
+
+.about-profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform var(--transition-normal);
+}
+
+.about-image-card:hover .about-profile-pic {
+  transform: scale(1.03);
 }
 
 .about-text p {
