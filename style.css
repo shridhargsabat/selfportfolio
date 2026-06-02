@@ -463,6 +463,15 @@ header.scrolled {
   box-shadow: 0 0 15px var(--glow-color);
 }
 
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2px;
+  fill: none;
+  display: block;
+}
+
 .hero-visual {
   display: flex;
   justify-content: center;
