@@ -1160,8 +1160,8 @@ header.scrolled {
 /* --- Contact Form Section --- */
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .contact-info {
@@ -1175,6 +1175,15 @@ header.scrolled {
   display: flex;
   gap: 20px;
   align-items: center;
+  color: inherit;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.contact-method-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
 }
 
 .contact-icon-box {
