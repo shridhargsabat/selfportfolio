@@ -909,6 +909,11 @@ header.scrolled {
   opacity: 1;
 }
 
+.filter-btn span {
+  position: relative;
+  z-index: 2;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
