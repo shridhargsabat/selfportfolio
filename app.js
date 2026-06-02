@@ -221,9 +221,9 @@ function handleTerminalCommand(cmd) {
 
     case 'about':
       printTerminalLine('Shridhar Sabat', false, 'var(--color-accent)');
-      printTerminalLine('Role: Head - IT Infrastructure & Solutions Expert');
+      printTerminalLine('Role: Assistant Vice President — IT Infrastructure & Solutions');
       printTerminalLine('Vibe: Solutions Architect leveraging AI agents and automated workflows.');
-      printTerminalLine('Experience: Hybrid Cloud orchestration, compliance standards (ISO), and secure software delivery.');
+      printTerminalLine('Experience: 16+ years bridging hybrid cloud, compliance (ISO), and DevOps automation.');
       break;
 
     case 'skills':
