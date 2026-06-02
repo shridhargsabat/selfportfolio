@@ -221,7 +221,7 @@ function handleTerminalCommand(cmd) {
 
     case 'about':
       printTerminalLine('Shridhar Sabat', false, 'var(--color-accent)');
-      printTerminalLine('Role: Assistant Vice President — IT Infrastructure & Solutions');
+      printTerminalLine('Role: Head - Vibe Coding & Infra (AVP)');
       printTerminalLine('Vibe: Solutions Architect leveraging AI agents and automated workflows.');
       printTerminalLine('Experience: 16+ years bridging hybrid cloud, compliance (ISO), and DevOps automation.');
       break;
